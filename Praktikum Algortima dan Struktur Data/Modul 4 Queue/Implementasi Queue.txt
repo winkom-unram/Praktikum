@@ -1,0 +1,15 @@
+Being a Collection subtype all methods in the Collection interface are also available in the Queue interface. 
+Since Queue is an interface you need to instantiate a concrete implementation of the interface in order to use it. You can choose between the following Queue implementations in the Java Collections API: 
+
+- java.util.LinkedList
+LinkedList is a pretty standard queue implementation.
+
+- java.util.PriorityQueue
+PriorityQueue stores its elements internally according to their natural order (if they implement Comparable), or according to a Comparator passed to the PriorityQueue. 
+
+Here are a few examples of how to create a Queue instance:
+
+|-------------------------------------|
+| Queue queueA = new LinkedList();    |             
+| Queue queueB = new PriorityQueue(); | 
+|-------------------------------------|

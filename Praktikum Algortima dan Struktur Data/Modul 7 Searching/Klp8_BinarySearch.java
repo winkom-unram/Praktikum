@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AlgodatP7_J1_BinarySearch 
 {
+    static Scanner masukan = new Scanner(System.in);
     static int i;
     static int arr[];
     public static int binarySearch(int arr[], int l, int r, int x) 
@@ -26,7 +27,7 @@ public class AlgodatP7_J1_BinarySearch
     
     public static int[] input()
     {
-        Scanner masukan = new Scanner(System.in);
+        
         System.out.println("----------------INPUT NILAI ARRAY----------------");        
         arr= new int[22];
         for (i=0;i<22;i++)
@@ -41,7 +42,8 @@ public class AlgodatP7_J1_BinarySearch
     {
         AlgodatP7_J1_BinarySearch.input();
         int n = arr.length;
-        int x = 21;
+        System.out.print("Masukkan nilai yang ingin dicari : ");
+        int x = masukan.nextInt();
         int result = AlgodatP7_J1_BinarySearch.binarySearch(arr, 0, n - 1, x);
         System.out.println("-----------------HASIL PENCARIAN-----------------");
         if (result == -1) 
